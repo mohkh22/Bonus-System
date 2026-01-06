@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus System</title>
+    <link rel="StyleSheet" href="style.css">
+    <!-- <script src="main.js" defer></script> -->
+</head>
+<body>
+      
+  <div class="container">
+    
+       <h2>Student Management System</h2>
+      <table class="studendlist" id="studendlist">
+           <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attendance rate</th>
+                <th>Midterm grade</th>
+                <th>Final grade</th>
+                <th>Average tasks grade</th>
+                <th>Subtotal grades</th>
+                <th>Bonus</th>
+                <th>Total grades</th>
+                <th>Actions</th>
+                </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Mohamed</td>
+                   <td>10%</td>
+                   <td>5</td>
+                   <td>20</td>
+                   <td>3</td>
+                   <td>28</td>
+                   <td>10</td>
+                   <td>38</td>
+                   <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                   </td>
+               </tr>
+                <tr>
+                    <td>Mohsen</td>
+                    <td>20%</td>
+                    <td>6</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>41</td>
+                    <td>10</td>
+                    <td>51</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Abdo</td>
+                    <td>30%</td>
+                    <td>7</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>42</td>
+                    <td>10</td>
+                    <td>52</td>
+                    <td>
+                        <button onclick="addbonus(this)">AddBouns</button>
+                        <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hassan</td>
+                    <td>40%</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>5</td>
+                    <td>65</td>
+                    <td>8</td>
+                    <td>73</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mostafa</td>
+                    <td>50%</td>
+                    <td>10</td>
+                    <td>45</td>
+                    <td>5</td>
+                    <td>60</td>
+                    <td>10</td>
+                    <td>70</td>
+                    <td>
+                        <button onclick="addbonus(this)">AddBouns</button>
+                        <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mahmoud</td>
+                    <td>60%</td>
+                    <td>8</td>
+                    <td>50</td>
+                    <td>5</td>
+                    <td>63</td>
+                    <td>6</td>
+                    <td>69</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Khaled</td>
+                    <td>70%</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>70</td>
+                    <td>10</td>
+                    <td>80</td>
+                    <td>
+                        <button onclick="addbonus(this)">AddBouns</button>
+                        <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amr</td>
+                    <td>80%</td>
+                    <td>8</td>
+                    <td>40</td>
+                    <td>8</td>
+                    <td>56</td>
+                    <td>8</td>
+                    <td>64</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ali</td>
+                    <td>90%</td>
+                    <td>9</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>44</td>
+                    <td>6</td>
+                    <td>50</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ahmed</td>
+                    <td>100%</td>
+                    <td>10</td>
+                    <td>50</td>
+                    <td>10</td>
+                    <td>70</td>
+                    <td>10</td>
+                    <td>80</td>
+                    <td>
+                    <button onclick="addbonus(this)">AddBouns</button>
+                    <button onclick="detail(this)">Details</button>
+                    </td>
+                </tr>
+           </tbody>
+      </table>
+
+      <div class="cover" id="cover"></div>
+      <div class="add" id="add">
+           <h3>Add Bonus</h3>
+          <input type="number" id="textbonus" placeholder="Bonus">
+          <span id="cl">x</span>
+          <button id="addbonus">Add</button>
+      </div>
+        <div class="details" id="detail">
+              <table  id="tdetail">
+
+              </table>         
+                <button id="cls">x</button>
+        </div>
+      
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
